@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 61, 91);
+}
+.logo{
+    font-weight: 700px;
+    font-size: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+.nav-itens{
+    list-style: none;
+    display: flex;
+}
+.nav-itens>li>a{
+    padding-left: 20px;
+}
