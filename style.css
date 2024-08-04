@@ -8,18 +8,44 @@ body{
 }
 .logo{
     font-weight: 700px;
-    font-size: 25px;
+    font-size: 28px;
 }
+
 nav{
+    color: white;
+    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
+    height: 90px; /* Define a altura da navbar */
+    background-color: rgb(67, 93, 134);
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin-top: 20px;
-    text-align: center;
+}
+.nav-itens li {
+    margin-left: 20px;
 }
 .nav-itens{
+    font-size: 25px;
     list-style: none;
     display: flex;
 }
-.nav-itens>li>a{
-    padding-left: 20px;
+.nav-itens a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Aumenta o espaçamento dos links */
+    transition: color 0.3s ease; /* Animação suave */
+}
+.nav-itens li a:hover {
+    color: rgb(173, 203, 234);
+}
+button{
+    border-radius: 30px; /* Arredonda o botão */
+    padding: 15px 30px;
+    background-color: rgb(38, 62, 105); /* Cor de fundo inicial */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+button:hover {
+    background-color: rgb(173, 203, 234); /* Azul clarinho ao passar o mouse */
 }
