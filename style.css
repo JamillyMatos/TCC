@@ -3,8 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+main{
+    height: 300vh;
+}
 body{
     background-color: rgb(44, 61, 91);
+    height: 400vh;
 }
 .logo{
     font-weight: 700px;
@@ -20,6 +24,84 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
+.container-pes{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer{
+    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
+    height: 180px; /* Define a altura da navbar */
+    background-color: rgb(67, 93, 134);
+    display: flex;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(37, 37, 140);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: aqua;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: brown;
+    text-decoration: none;
+    font-weight: 300;
+    color: chartreuse;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: bisque;
+    padding-left: 10px;
+}
+/*Resposividade*/
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
 .nav-itens li {
     margin-left: 20px;
 }
@@ -38,6 +120,7 @@ nav{
     color: rgb(173, 203, 234);
 }
 button{
+    font-size: 14px;
     border-radius: 30px; /* Arredonda o botão */
     padding: 15px 30px;
     background-color: rgb(38, 62, 105); /* Cor de fundo inicial */
