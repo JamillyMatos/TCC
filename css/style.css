@@ -3,31 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
-main{
-    height: 300vh;
-}
+
 body{
     background-color: rgb(44, 61, 91);
     height: 400vh;
 }
-.logo{
-    font-weight: 700px;
-    font-size: 28px;
-}
 
+/*Resposividade*/
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}
 nav{
+    align-items: center;
     color: white;
     padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
     height: 90px; /* Define a altura da navbar */
     background-color: rgb(67, 93, 134);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 .container-pes{
     max-width: 1170px;
     margin: auto;
 }
+
 .footer{
     padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
     height: 180px; /* Define a altura da navbar */
@@ -81,18 +86,6 @@ nav{
     color: bisque;
     padding-left: 10px;
 }
-/*Resposividade*/
-@media(max-width:767px){
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media(max-width:574px){
-    .footer-col{
-        width: 100%;
-    }
-}
 
 .row{
     display: flex;
@@ -101,22 +94,27 @@ nav{
 ul{
     list-style: none;
 }
-
-.nav-itens li {
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerli {
     margin-left: 20px;
 }
-.nav-itens{
+.header{
     font-size: 25px;
     list-style: none;
     display: flex;
 }
-.nav-itens a{
+.header a{
     color: white;
     text-decoration: none;
     padding: 10px 20px; /* Aumenta o espaçamento dos links */
     transition: color 0.3s ease; /* Animação suave */
 }
-.nav-itens li a:hover {
+.header li a:hover {
     color: rgb(173, 203, 234);
 }
 button{
@@ -131,4 +129,29 @@ button{
 }
 button:hover {
     background-color: rgb(173, 203, 234); /* Azul clarinho ao passar o mouse */
+}
+
+main{
+    background-color: chocolate;
+}
+.main{
+    background-color: rgb(117, 100, 88);
+    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
+    height: 350px; /* Define a altura da navbar */
+}
+
+.main2{
+    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
+    height: 350px; /* Define a altura da navbar */
+    background-color: rgb(75, 8, 137);
+}
+.main3{
+    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
+    height: 350px; /* Define a altura da navbar */
+    background-color: rgb(29, 130, 135);
+}
+.main4{
+    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
+    height: 350px; /* Define a altura da navbar */
+    background-color: rgb(75, 8, 137);
 }
